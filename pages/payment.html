@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran</title>
+    <link rel="stylesheet" href="/css/payment.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pembayaran</h1>
+    </header>
+    <main>
+      <section class="payment-details">
+        <h2>Detail Reservasi</h2>
+        <div id="reservationDetails"></div>
+      </section>
+
+      <section class="payment-form">
+        <h2>Metode Pembayaran</h2>
+        <form id="paymentForm">
+          <label for="paymentMethod">Pilih Metode Pembayaran:</label>
+          <select id="paymentMethod" name="paymentMethod" required>
+            <option value="">-- Pilih --</option>
+            <option value="creditCard">Kartu Kredit</option>
+            <option value="bankTransfer">Transfer Bank</option>
+            <option value="eWallet">E-Wallet</option>
+          </select>
+
+          <button type="button" id="btn">Bayar Sekarang</button>
+          <script src="dist/sweetalert2.all.min.js"></script>
+
+          <script>
+            const btn = document.getElementById('btn');
+            btn.addEventListener('click', function(){
+                Swal.fire({
+                  title : 'Pembayaran Berhasil',
+                  text : 'Terima Kasih Telah Melakukan Transaksi',
+                  icon : 'success'
+                })
+            });
+          </script>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Sistem Reservasi</p>
+    </footer>
+    <script src="payment.js"></script>
+  </body>
+</html>

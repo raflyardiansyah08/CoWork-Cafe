@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manajemen Membership</title>
+    <link rel="stylesheet" href="/css/member.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Membership</h1>
+    </header>
+    <main>
+      <section id="form-section">
+        <h2>Pendaftaran Member Baru</h2>
+        <form id="registration-form">
+          <label for="name">Nama Lengkap:</label>
+          <input type="text" id="name" placeholder="Masukkan nama Anda" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Masukkan email Anda" required />
+
+          <label for="phone">Nomor Telepon:</label>
+          <input type="tel" id="phone" placeholder="Masukkan nomor telepon Anda" required />
+
+          <button type="button" id="register-btn">Daftar</button>
+          <script src="dist/sweetalert2.all.min.js"></script>
+          
+          <script>
+            const btn = document.getElementById('register-btn');
+            btn.addEventListener('click', function () {
+              Swal.fire({
+                title: 'Pendaftaran Berhasil',
+                text: 'Terima Kasih Telah Melakukan Pendaftaran',
+                icon: 'success'
+              })
+            });
+          </script>
+        </form> 
+        <div id="member-id"></div>
+      </section>
+
+      <section id="package-section">
+        <h2>Paket Membership</h2>
+        <div class="package">
+          <h3>Paket Silver</h3>
+          <p>Benefit: Akses dasar ke layanan.</p>
+          <a href="payment.html"><button class="select-btn">Pilih Paket</button></a>
+        </div>
+        <div class="package">
+          <h3>Paket Gold</h3>
+          <p>Benefit: Akses penuh ke layanan dengan bonus tambahan.</p>
+          <a href="payment.html"><button class="select-btn">Pilih Paket</button></a>
+        </div>
+        <div class="package">
+          <h3>Paket Platinum</h3>
+          <p>Benefit: Semua akses tanpa batas, plus konsultasi gratis.</p>
+          <a href="payment.html"><button class="select-btn">Pilih Paket</button></a>
+        </div>
+        <div id="selected-package"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Manajemen Membership</p>
+    </footer>
+    <script src="member.js"></script>
+  </body>
+</html>

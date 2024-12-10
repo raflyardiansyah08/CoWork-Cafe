@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Reservasi dan Booking</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sistem Reservasi dan Booking</h1>
+    </header>
+    <main>
+      <section class="booking-form">
+        <h2>Reservasi Online</h2>
+        <form id="reservationForm">
+          <label for="roomType">Pilih Jenis Ruangan:</label>
+          <select id="roomType" name="roomType" required>
+            <option value="">-- Pilih --</option>
+            <option value="meetingRoom">Ruang Meeting</option>
+            <option value="conferenceRoom">Ruang Konferensi</option>
+            <option value="privateRoom">Ruang Pribadi</option>
+          </select>
+
+          <label for="date">Pilih Tanggal:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="time">Pilih Waktu:</label>
+          <input type="time" id="time" name="time" required />
+
+          <a href="payment.html"><button type="button" id="submitReservation">Pesan Sekarang</button></a>
+        </form>
+      </section>
+      <section class="reservation-status">
+        <h2>Status Reservasi</h2>
+        <div id="reservationStatus">
+          <p>Belum ada reservasi.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Sistem Reservasi</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
