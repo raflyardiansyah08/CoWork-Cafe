@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Restoran</title>
+    <link rel="stylesheet" href="/css/menu.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Menu Cafe</h1>
+        <p>Nikmati hidangan lezat kami</p>
+      </header>
+
+      <div class="menu-tabs">
+        <a href="/pages/makanan.html"
+          ><button class="tab-btn" data-category="Makanan">
+            <img src="/image/Spoon_Fork_Logo_Vector_PNG_Images__Crossed_Spoon_And_Fork_Restaurant_And__Logo_Design__Tools_Clipart__Logo__Symbol_PNG_Image_For_Free_Download-removebg-preview.png" alt="food icon" />
+            Makanan
+          </button></a
+        >
+        <a href="/pages/minuman.html">
+          <button class="tab-btn" data-category="minuman">
+            <img
+              src="/image/Одноразовые_чашки_векторные_иллюстрации_с_ручной_обращается_стиль_на_вынос_напиток_векторные_иллюстрации_PNG___пищевой_клипарт__Напиток__навынос_PNG_картинки_и_пнг_рисунок_для_бесплатной_загрузки-remo.png"
+              alt="drink icon"
+            />
+            Minuman
+          </button></a
+        >
+      </div>
+
+      <div class="filter-container">
+        <a href="/index.html"><button onclick="filterMenu('menu')">Kembali</button></a>
+      </div>
+
+      <div class="menu-container">
+        <div id="makanan" class="menu-section">
+          <div class="menu-grid">
+            <!-- Menu items will be inserted here by JavaScript -->
+          </div>
+        </div>
+
+        <div id="minuman" class="menu-section">
+          <div class="menu-grid">
+            <!-- Menu items will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>
