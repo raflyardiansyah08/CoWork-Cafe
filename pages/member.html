@@ -9,6 +9,7 @@
   <body>
     <header>
       <h1>Membership</h1>
+      <a href="/index.html"><button type="button">Kembali</button></a>
     </header>
     <main>
       <section id="form-section">
@@ -25,18 +26,18 @@
 
           <button type="button" id="register-btn">Daftar</button>
           <script src="dist/sweetalert2.all.min.js"></script>
-          
+
           <script>
             const btn = document.getElementById('register-btn');
             btn.addEventListener('click', function () {
               Swal.fire({
                 title: 'Pendaftaran Berhasil',
                 text: 'Terima Kasih Telah Melakukan Pendaftaran',
-                icon: 'success'
-              })
+                icon: 'success',
+              });
             });
           </script>
-        </form> 
+        </form>
         <div id="member-id"></div>
       </section>
 

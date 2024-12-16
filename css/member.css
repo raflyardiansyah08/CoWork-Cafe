@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #007bff;
+  background-color: #1a252f;
   color: white;
   text-align: center;
   padding: 1rem 0;
@@ -18,7 +18,7 @@ main {
 }
 
 h2 {
-  color: #007bff;
+  color: #1a252f;
 }
 
 form {
@@ -38,16 +38,11 @@ input {
 
 button {
   padding: 0.5rem 1rem;
-  background-color: #007bff;
+  background-color: #1a252f;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-  transition: all 0.5s ease-in-out;
 }
 
 .package {
@@ -66,14 +61,18 @@ button:hover {
   margin-top: 1rem;
   padding: 1rem;
   background-color: #e7f5ff;
-  border: 1px solid #007bff;
+  border: 1px solid #1a252f;
   border-radius: 5px;
+}
+
+footer p {
+  color: white;
 }
 
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #f1f1f1;
+  background-color: #1a252f;
   margin-top: 20px;
 }
 

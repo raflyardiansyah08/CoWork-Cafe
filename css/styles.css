@@ -13,6 +13,13 @@ header {
   text-align: center;
 }
 
+header button {
+  color: white;
+  border: none;
+  width: 10%;
+  padding: 10px;
+}
+
 main {
   padding: 20px;
 }
@@ -55,24 +62,8 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  transition: all 0.5s ease-in-out;
-  background-color: #304153;
-}
-
 .reservation-status p {
   color: #333;
-}
-
-footer,
-p {
-  color: #ddd;
-}
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #1a252f;
-  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
