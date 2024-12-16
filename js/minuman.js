@@ -40,6 +40,30 @@ const menuItems = [
     deskripsi: 'Matcha dengan campuran susu vanila dengan es batu',
     gambar: 'https://i.pinimg.com/736x/cb/66/da/cb66da85f610e51e4d2a37da459b6afa.jpg',
   },
+  {
+    id: 6,
+    nama: 'Air Mineral',
+    kategori: 'minuman',
+    harga: 'Rp 10.000',
+    deskripsi: 'Pilihan simpel untuk menjaga hidrasi sepanjang hari',
+    gambar: 'https://i.pinimg.com/474x/b4/df/0a/b4df0a9cf53da422003ecaeb5c5d8022.jpg',
+  },
+  {
+    id: 7,
+    nama: 'Cold Brew',
+    kategori: 'minuman',
+    harga: 'Rp 30.000',
+    deskripsi: 'Kopi dingin yang diseduh perlahan, menghasilkan rasa halus dan segar',
+    gambar: 'https://i.pinimg.com/474x/2e/26/92/2e269256f27a8e15dd3e5109f19e6152.jpg',
+  },
+  {
+    id: 8,
+    nama: 'Smoothies Berry',
+    kategori: 'minuman',
+    harga: 'Rp 35.000',
+    deskripsi: 'Minuman sehat berbasis buah buahan segar, cocok untuk mengisi energi',
+    gambar: 'https://i.pinimg.com/474x/16/5f/d6/165fd60393f74a46f823141f7c020d93.jpg',
+  },
 ];
 
 // Fungsi untuk menampilkan menu
