@@ -16,13 +16,20 @@
         <h2>Pendaftaran Member Baru</h2>
         <form id="registration-form">
           <label for="name">Nama Lengkap:</label>
-          <input type="text" id="name" placeholder="Masukkan nama Anda" required />
+          <input type="text" id="name" required />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="Masukkan email Anda" required />
+          <input type="email" id="email" required />
 
           <label for="phone">Nomor Telepon:</label>
-          <input type="tel" id="phone" placeholder="Masukkan nomor telepon Anda" required />
+          <input type="tel" id="phone" required />
+
+          <label for="membership-type">Tipe Membership:</label>
+          <select id="membership-type" required>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+            <option value="platinum">Platinum</option>
+          </select>
 
           <button type="button" id="register-btn">Daftar</button>
           <script src="dist/sweetalert2.all.min.js"></script>
@@ -39,26 +46,6 @@
           </script>
         </form>
         <div id="member-id"></div>
-      </section>
-
-      <section id="package-section">
-        <h2>Paket Membership</h2>
-        <div class="package">
-          <h3>Paket Silver</h3>
-          <p>Benefit: Akses dasar ke layanan.</p>
-          <a href="payment.html"><button class="select-btn">Pilih Paket</button></a>
-        </div>
-        <div class="package">
-          <h3>Paket Gold</h3>
-          <p>Benefit: Akses penuh ke layanan dengan bonus tambahan.</p>
-          <a href="payment.html"><button class="select-btn">Pilih Paket</button></a>
-        </div>
-        <div class="package">
-          <h3>Paket Platinum</h3>
-          <p>Benefit: Semua akses tanpa batas, plus konsultasi gratis.</p>
-          <a href="payment.html"><button class="select-btn">Pilih Paket</button></a>
-        </div>
-        <div id="selected-package"></div>
       </section>
     </main>
     <footer>

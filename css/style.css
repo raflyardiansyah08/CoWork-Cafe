@@ -170,8 +170,11 @@
 }
 
 .contact-form {
-  max-width: 600px;
-  margin: 0 auto;
+  flex: 1;
+  min-width: 300px; /* Lebar minimum untuk responsif */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Jarak antar elemen form */
 }
 
 .form-group {

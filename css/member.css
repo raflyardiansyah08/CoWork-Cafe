@@ -45,6 +45,12 @@ button {
   cursor: pointer;
 }
 
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 .package {
   border: 1px solid #ddd;
   border-radius: 5px;

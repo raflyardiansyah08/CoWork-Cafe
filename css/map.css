@@ -1,0 +1,40 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Jarak antara map dan form */
+}
+
+.inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px; /* Jarak kiri dan kanan */
+  max-width: 1300px; /* Batas lebar maksimal */
+  margin: 0 auto; /* Tengah */
+  box-sizing: border-box;
+}
+
+iframe {
+  height: 385px;
+  border-radius: 5px;
+  margin-right: 300px; /* Jarak kanan */
+}
+
+.map-container {
+  flex: 10%; /* Mengatur lebar */
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 10px; /* Jarak antara container dan map */
+  }
+
+  .map-container,
+  .contact-form {
+    flex: none;
+    width: 100%;
+  }
+}
