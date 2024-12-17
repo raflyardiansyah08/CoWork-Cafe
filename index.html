@@ -108,15 +108,15 @@
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1405.6534549884805!2d112.76605639609097!3d-7.299190968890407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8a788b3b7%3A0x62fd2426363014e5!2sUntag!5e0!3m2!1sid!2sid!4v1734406365718!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
             <div class="form-group">
-                <input type="text" placeholder="Your Name" required>
+                <input type="text" id="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-                <input type="email" placeholder="Your Email" required>
+                <input type="email" id="email" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
             </div>
             <button type="submit" class="cta-button">Send Message</button>
         </form>
